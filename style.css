@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
+    
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -9,6 +10,18 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+.fa-arrow-right {
+    font-size: 30px;
+}
+
+.cadre_logo {
+    border-radius: 10px;
+    background-color: #323232;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: .8;
 }
 
 a,
@@ -658,12 +671,15 @@ a {
     color: #575757!important;
 }
 
-.container {
-    max-width: 1000px;
-}
+/* .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 50px;
 }
 
 .hero-bloc-text-sub {
@@ -681,11 +697,13 @@ a {
 }
 
 p {
-    font-size: 11px;
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 100;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto auto auto auto;
 }
 
@@ -694,8 +712,56 @@ p {
     font-family: "Open Sans";
 }
 
+input {
+}
+
+ #name {
+    height: 35px;
+    padding-right: 10px;
+    width: 300px;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#email {
+    height: 35px;
+    padding-right: 10px;
+    width: 300px;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    height: 35px;
+    padding-right: 10px;
+    width: 400px;
+    font-size: large;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#message {
+    height: 90px;
+}
+
+.row > .intitule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(111, 21, 21);
+    opacity: .8;
+    width: max-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 400px;
+}
+
 .cta-hero {
-    margin-top: 22px;
+    margin-top: 25px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
@@ -726,6 +792,10 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
+.webdesign {
+    size: 18px;
+}
+
 h1 {
     color: #333333!important;
 }
@@ -741,6 +811,7 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+    size: 20px;
 }
 
 .portfolio-thumb {
@@ -776,20 +847,27 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
+    padding-left: 0px;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: rgb(245, 87, 19);
     color: #FFFFFF!important;
+    border-radius: 10px;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #ffffff!important;
+    color: coral!important;
 }
 
 .ltc-white {
@@ -797,7 +875,7 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: coral!important;
 }
 
 .ltc-atomic-tangerine {
@@ -805,7 +883,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color:coral!important;
 }
 
 .icon-dark-slate-blue {
@@ -828,6 +906,20 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.partners > ul {
+    list-style: none;
+}
+
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -852,13 +944,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -938,6 +1030,9 @@ h4 {
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
+
+    
+
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px!important;
