@@ -10,6 +10,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    max-width: 1440px;
+}
+
+.topbar {
+    width: 100%;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+} 
+
+.med-width-whitespace {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
 }
 
 .fa-arrow-right {
@@ -59,6 +79,12 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 }
 
 .bloc-lg {
@@ -97,6 +123,10 @@ a:hover {
     background: top no-repeat;
 }
 
+.chouette {
+    width: 200px;
+}
+
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
@@ -132,6 +162,17 @@ a:hover {
     border-color: rgba(255, 255, 255, .9);
 }
 
+.quote {
+    font: "helvetica";
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.author {
+    font-size: 15px;
+}
+
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }
@@ -150,7 +191,13 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #FFFFFF;
+    background-color:  rgb(245, 87, 19);
+    padding: 12px 28px 12px 28px;
+    border-radius: 10px;
+    text-decoration: none!important;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .d-bloc .a-btn:hover,
@@ -167,7 +214,8 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(245, 87, 19);
+    background-color: #FFFFFF;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -213,6 +261,8 @@ a:hover {
 .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, .5);
+    position: relative;
+    width: 100%;
 }
 
 .d-bloc .panel button:hover,
@@ -309,6 +359,13 @@ a:hover {
     z-index: 1;
 }
 
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+}
+
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
@@ -322,6 +379,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    width: 70%;
 }
 
 .navbar-brand img[src$=svg] {
@@ -357,6 +415,9 @@ a:hover {
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+    position: absolute;
+    right: 0px;
+    top: 3px;
 }
 
 .navbar-toggle:hover {
@@ -379,8 +440,16 @@ a:hover {
     z-index: 2;
 }
 
+.col-sm-3 {
+    margin-bottom: 10px;
+}
 
 @media (min-width: 768px) {
+
+.navbar {
+    width: 100%;
+}
+
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -419,7 +488,12 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+
+    .col-sm-4 {
+        width: 100%
+    }
 }
+
 
 .nav > li > .dropdown a {
     background: none!important;
@@ -452,6 +526,8 @@ nav .caret {
     margin: 6px -5px 0 0!important;
     float: right;
 }
+
+
 
 .mg-md {
     margin-top: 10px;
@@ -625,6 +701,10 @@ a[data-lightbox]:hover img {
     color: #FFF;
 }
 
+.bloc {
+    margin: none;
+}
+
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
@@ -761,13 +841,22 @@ input {
     margin-left: 400px;
 }
 
+
+
 .cta-hero {
     margin-top: 25px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
+}
+
+.wework {
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: #e4e0e0 .5px solid;
 }
 
 .social {
@@ -817,6 +906,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 365px;
 }
 
 .portfolio-row {
@@ -922,7 +1012,7 @@ h4 {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -936,7 +1026,7 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+/* @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
@@ -1139,4 +1229,4 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
+} */
