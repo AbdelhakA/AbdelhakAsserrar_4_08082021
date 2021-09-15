@@ -64,16 +64,47 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+.row > .intitule_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(111, 21, 21);
+    opacity: .8;
+    width: 100%;   
+}
+
+.ctc > p {
+        margin-top: 60px;
+        font-size: 23px;
+        font-weight: 100;
+        text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form_btn {
+    
+}
+
+
 .bloc {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+
 }
 
 .bloc .container {
@@ -89,6 +120,22 @@ align-items: center;
 
 .bloc-lg {
     padding: 100px 50px;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloc-md {
@@ -446,7 +493,7 @@ align-items: center;
 
 @media (min-width: 768px) {
 
-.navbar {
+.bar {
     width: 100%;
 }
 
@@ -817,7 +864,7 @@ input {
 .form-control {
     height: 35px;
     padding-right: 10px;
-    width: 400px;
+    width: 320px;
     font-size: large;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -835,10 +882,7 @@ input {
     border-radius: 10px;
     background-color: rgb(111, 21, 21);
     opacity: .8;
-    width: max-content;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 400px;
+    width: 100%;
 }
 
 
@@ -948,6 +992,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .btn-atomic-tangerine {
@@ -1014,8 +1059,8 @@ h4 {
 
 @media (max-width: 992px) {
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
+        /* padding-left: 20px;
+        padding-right: 20px; */
     }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
