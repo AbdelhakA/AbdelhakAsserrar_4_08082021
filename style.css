@@ -65,9 +65,9 @@ a:hover {
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
-.row > .intitule_mobile {
+.row > .intitule {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     background-color: rgb(111, 21, 21);
@@ -132,8 +132,8 @@ align-items: center;
 }
 
 .row {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -492,6 +492,20 @@ align-items: center;
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+
+/* .container {
+    width: 750px;
+    flex-direction: column;
+} */
+
+.portfolio-row {
+    flex-direction: column;
+}
+
+
+}
+
 @media (min-width: 1440px) {
 
 .bar {
@@ -564,6 +578,10 @@ nav .caret {
     margin-left: -1px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+.container {
+    max-width: 1000px;
 }
 
 .dropdown-menu .dropdown span {
@@ -955,11 +973,12 @@ h4 {
     width: 365px;
 }
 
+
+
 .portfolio-column {
     margin-bottom: 44px;
     margin-top: 50px;
-    display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .avatar {
@@ -1061,7 +1080,8 @@ h4 {
 
 
 
-@media (max-width: 768px) {
+
+ @media (max-width: 768px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -1075,28 +1095,28 @@ h4 {
     }
 }
 
-/* @media (max-width: 992px) and (min-width: 768px) {
+ @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
     .nav-center.navbar .nav {
         max-width: 100%
     }
-} */
+} 
 
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
-} */
+}
 
-/* @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
-} */
+} 
 
-/* @media (max-width: 991px) {
+ @media (max-width: 991px) {
     .container {
         width: 100%;
     }
@@ -1273,4 +1293,4 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}  */
+}
