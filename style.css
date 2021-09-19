@@ -10,12 +10,37 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    max-width: 1440px;
+    width: 100%;
+}
+
+header {
+    width: 100px;
+}
+
+
+header > .container {
+    width: 100%;
+    margin: 0px;
     max-width: 1440px;
 }
 
+header > .container > .row {
+    width: 100%;
+    
+    
+}
+
 .topbar {
+    max-width: 1440px;
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .bloc {
@@ -37,9 +62,6 @@ body {
     align-items: center;
 }
 
-.fa-arrow-right {
-    font-size: 30px;
-}
 
 .cadre_logo {
     border-radius: 10px;
@@ -61,9 +83,9 @@ a:hover {
 }
 
 .contactus {
-    margin-top: 0px;
+    /* margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 20px; */
     display: none;
 }
 
@@ -106,7 +128,7 @@ form {
     
 }
 
-.fa-paper-plane {
+a .fa-paper-plane {
     font-size: 30px;
 }
 
@@ -530,7 +552,7 @@ align-items: center;
         max-width: 1000px;
     }
 
-    .fa-paper-plane {
+    a .fa-paper-plane {
         display: none;
     }
 
