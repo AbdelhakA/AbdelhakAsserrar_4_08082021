@@ -1148,8 +1148,17 @@ h4 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    color: white!important;
 }
 
 .partners > ul {
     list-style: none;
+}
+
+.partners > p {
+    color: #FFFFFF!important;
+}
+
+.partners > ul > li > a {
+    color: #FFFFFF!important;
 }
